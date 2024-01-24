@@ -64,7 +64,6 @@
       </form>
     </div>
       <form class="buy-form" @submit.prevent="checkInputs">
-
         <div>
           <p>First Name: {{ appStore.firstName }}</p>
           <p>Last Name: {{ appStore.lastName }}</p>

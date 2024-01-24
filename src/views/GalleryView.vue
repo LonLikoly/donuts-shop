@@ -6,7 +6,7 @@
             <hr class="mt-2 mb-5">
             <div class="row text-center text-lg-start">
               <GalleryCard
-                v-for="image in galleryList"
+                v-for="image in galleryStore.gallery"
                 :key="image.id"
                 :image="image.image"
           />
@@ -17,21 +17,15 @@
 
   </body>
 </template>
-<script>
-// import gallery from "@/assets/gallery.json";
+<script >
 import { useGalleryStore } from "@/stores/GalleryStore";
-
 import GalleryCard from "@/components/GalleryCard.vue";
 import { RouterLink } from "vue-router";
 export default {
-  data() {
-    return {
-     galleryList: useGalleryStore()
-    };
-  },
   components: { RouterLink, GalleryCard },
-  mounted() {
-    // this.galleryList = gallery.gallery;
+  setup(){
+  const galleryStore = useGalleryStore()
+  return {galleryStore}
   },
 }
 </script>
