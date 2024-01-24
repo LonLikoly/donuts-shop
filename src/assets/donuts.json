@@ -1,0 +1,218 @@
+{
+    "donuts": [
+        {
+        "name": "Image Donut Boxes",
+          "slug": "image_donut_boxes",
+          "id": 1,
+          "donuts": [
+            {
+              "id": 1,
+              "name": "Mr. Grinch",
+              "image": "withimg1.png",
+              "description": "Creamy ice cream, Blueberry pie, Rafaello, Apple strudel, Strawberry ice cream, Bavarian cream",
+              "oldprice":"50",
+              "newprice":"40"
+            },
+            {
+                "id": 2,
+                "name": "Ironic",
+                "image": "withimg2.png",
+                "description": "Creamy ice cream, Blueberry pie, Rafaello, Apple strudel, Strawberry ice cream, Bavarian cream",
+                "oldprice":"50",
+                "newprice":"40"
+            },
+            {
+                "id": 3,
+                "name": "The Big State",
+                "image": "withimg3.png",
+                "description": "Creamy ice cream, Blueberry pie, Rafaello, Apple strudel, Strawberry ice cream, Bavarian cream",
+                "oldprice":"50",
+                "newprice":"40"
+            },
+            {
+                "id": 4,
+                "name": "BFFs",
+                "image": "withimg4.png",
+                "description": "Creamy ice cream, Blueberry pie, Rafaello, Apple strudel, Strawberry ice cream, Bavarian cream",
+                "oldprice":"50",
+                "newprice":"40"
+            },
+            {
+                "id": 5,
+                "name": "Why I love you",
+                "image": "withimg5.png",
+                "description": "Creamy ice cream, Blueberry pie, Rafaello, Apple strudel, Strawberry ice cream, Bavarian cream",
+                "oldprice":"50",
+                "newprice":"40"
+            },
+            {
+                "id":  6,
+              "name": "Ninja Turtles",
+              "image": "withimg6.png",
+              "description": "Creamy ice cream, Blueberry pie, Rafaello, Apple strudel, Strawberry ice cream, Bavarian cream",
+              "oldprice":"50",
+              "newprice":"40"
+            },
+            {
+                "id": 7,
+              "name": "Next to you",
+              "image": "withimg7.png",
+              "description": "Creamy ice cream, Blueberry pie, Rafaello, Apple strudel, Strawberry ice cream, Bavarian cream",
+              "oldprice":"50",
+              "newprice":"40"
+            },
+            {
+                "id": 8,
+              "name": "To My Mom",
+              "image": "withimg8.png",
+              "description": "Creamy ice cream, Blueberry pie, Rafaello, Apple strudel, Strawberry ice cream, Bavarian cream",
+              "oldprice":"50",
+              "newprice":"40"
+            }
+        ]
+    },
+    {
+        "name": "Triple Sets",
+        "slug": "triple_sets",
+        "id": 2,
+        "donuts": [
+          {  
+            "id": 1,          
+            "name": "Tripls Set 1",
+            "image": "box1.png",
+            "description": "Raspberry, Bubblegum, Frutella",
+            "oldprice":"35",
+            "newprice":"28"
+          },
+          {  
+            "id": 2,          
+            "name": "Tripls Set 2",
+            "image": "box2.png",
+            "description": "Tropicana, Berry Boom, Banana",
+            "oldprice":"35",
+            "newprice":"28"
+          },
+          {  
+            "id": 3,         
+            "name": "Tripls Set 3",
+            "image": "box3.png",
+            "description": "Creamy ice cream, Apple strudel, Strawberry ice cream",
+            "oldprice":"35",
+            "newprice":"28"
+          },
+          {   
+            "id": 4,       
+            "name": "Tripls Set 4",
+            "image": "box4.png",
+            "description": "Blueberry pie, Pistachio-Malina, Custard",
+            "oldprice":"35",
+            "newprice":"28"
+          },
+          {
+            "id": 5,
+            "name": "Tripls Set 5",
+            "image": "box3.png",
+            "description": "Creamy ice cream, Apple strudel, Strawberry ice cream",
+            "oldprice":"35",
+            "newprice":"28"
+          },
+          {
+            "id":  6,
+            "name": "Tripls Set 6",
+            "image": "box2.png",
+            "description": "Tropicana, Berry Boom, Banana",
+            "oldprice":"35",
+            "newprice":"28"
+          },
+          {
+            "id": 7,
+            "name": "Tripls Set 7",
+            "image": "box4.png",
+            "description": "Blueberry pie, Pistachio-Malina, Custard",
+            "oldprice":"35",
+            "newprice":"28"
+          },
+          {
+            "id": 8,
+            "name": "Tripls Set 8",
+            "image": "box1.png",
+            "description": "Raspberry, Bubblegum, Frutella",
+            "oldprice":"35",
+            "newprice":"28"
+          }
+        ]
+      },
+      {
+        "name": "Solo Donuts",
+              "slug": "solo_donuts",
+              "id": 3,
+              "donuts": [
+                {
+                    "id": 1,
+                  "name": "Raspberry",
+                  "image": "single1.png",
+                  "description": "\"Raspberry\" is a juicy and fragrant combination of butter cream with the taste of sweet raspberries.",
+                  "oldprice":"10",
+                  "newprice":"8"
+                },
+                {
+                    "id": 2,
+                  "name": "Tropicana",
+                  "image": "single2.png",
+                  "description": "\"Tropicana\" is a donut filled with mango and passion fruit flavored buttercream.",
+                  "oldprice":"10",
+                  "newprice":"8"
+                },
+                {
+                    "id": 3,
+                    "name": "Bubblegum",
+                    "image": "single3.png",
+                    "description": "\"Bubblegum\" is a filling made of buttercream with the taste of famous chewing gum.",
+                    "oldprice":"10",
+                    "newprice":"8"
+                  },
+                  {
+                    "id": 4,
+                    "name": "Frutella",
+                    "image": "single4.png",
+                    "description": "\"Frutella\" is a real find for fans of the eponymous berry-flavored candy.",
+                    "oldprice":"10",
+                    "newprice":"8"
+                  },
+                  {
+                    "id": 5,
+                  "name": "Tropicana",
+                  "image": "single2.png",
+                  "description": "\"Tropicana\" is a donut filled with mango and passion fruit flavored buttercream.",
+                  "oldprice":"10",
+                  "newprice":"8"
+                  },
+                  {
+                    "id":  6,
+                    "name": "Frutella",
+                    "image": "single4.png",
+                    "description": "\"Frutella\" is a real find for fans of the eponymous berry-flavored candy.",
+                    "oldprice":"10",
+                    "newprice":"8"
+                  },
+                  {
+                    "id": 7,
+                  "name": "Raspberry",
+                  "image": "single1.png",
+                  "description": "\"Raspberry\" is a juicy and fragrant combination of butter cream with the taste of sweet raspberries.",
+                  "oldprice":"10",
+                  "newprice":"8"
+                    },
+                    {
+                        "id": 8,
+                    "name": "Bubblegum",
+                    "image": "single3.png",
+                    "description": "\"Bubblegum\" is a filling made of buttercream with the taste of famous chewing gum.",
+                    "oldprice":"10",
+                    "newprice":"8"
+                    }
+            ]
+        }
+        
+    ]
+}

@@ -1,0 +1,45 @@
+import { defineStore } from "pinia";
+export const useGalleryStore = defineStore("galleryStore", {
+  state: () => ({
+    gallery: [
+      {
+        "id": 1,
+        "image": "gallery1.png"
+      }, {
+        "id": 2,
+        "image": "gallery2.png"
+      }, {
+        "id": 3,
+        "image": "gallery3.png"
+      }, {
+        "id": 4,
+        "image": "gallery4.png"
+      }, {
+        "id": 5,
+        "image": "gallery5.png"
+      }, {
+        "id": 6,
+        "image": "gallery6.png"
+      }, {
+        "id": 7,
+        "image": "gallery7.png"
+      }, {
+        "id": 8,
+        "image": "gallery8.png"
+      }, {
+        "id": 9,
+        "image": "gallery9.png"
+      }, {
+        "id": 10,
+        "image": "gallery10.png"
+      },
+      {
+        "id": 11,
+        "image": "gallery11.png"
+      }, {
+        "id": 12,
+        "image": "gallery12.png"
+      }
+    ]
+  })
+})

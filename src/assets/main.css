@@ -1,0 +1,748 @@
+body{
+    background-color: #ffffff;
+    font-family: "Century Gothic";
+  }
+    body, html {
+    height: 100%;
+  } 
+  main{
+    margin-top:170px;
+    padding: 20px;
+  }
+  header{
+    z-index: 3;
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    padding-top: 20px;
+    margin-top: -170px;
+  }
+  * {
+    box-sizing: border-box; 
+    max-width: 100%;
+  }
+  .banner-txt{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+  .rolling img{
+    width: 80px; 
+  }
+  .rolling{
+    background-color: #ffe2f7; 
+    border: 2px solid #ffc1f5;
+    padding: 5px;
+  }
+  .popup {
+    font-size: 22px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .popup .popuptext {
+    visibility: hidden;
+  }
+  .popup .show {
+    visibility: visible;
+  }
+  .wecool{
+    list-style:url("../img/list.png");
+  }
+  .wecool img{
+    width: 10px;
+  }
+    input[type=text], input[type=name], input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #fff4fa;
+    border: 1px solid #d09cb9;
+    border-radius: 5px;
+  }   
+  input[type=text]:focus, input[type=name]:focus, input[type=email]:focus{
+    background-color: #f5ddfb;
+    outline: none;
+  }
+  .thanks{
+    width: 650px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto 200px auto;
+  }
+  .cb {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color:#490040;
+    opacity: 80%;
+  }
+  /* Hide the browser's default checkbox */
+  .cb input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #ffa0f2;
+  }
+  /* On mouse-over, add a grey background color */
+  .cb:hover input ~ .checkmark {
+    background-color: #ff8bf0;
+  }
+  /* When the checkbox is checked, add a blue background */
+  .cb input:checked ~ .checkmark {
+    background-color: #ba039b;
+  }
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;  
+  }
+  /* Show the checkmark when checked */
+  .cb input:checked ~ .checkmark:after {
+    display: block;
+  }
+  /* Style the checkmark/indicator */
+  .cb .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width:5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  /* Set a style for the submit button */
+  .btn1 {
+    background-color: #e493ff;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.8;
+    font-size: 17px;
+    border-radius: 1px;
+  }  
+  .btn1:hover {
+    opacity: 1;
+  }
+  .btn2 {
+    background-color: #e493ff;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 92%;
+    opacity: 0.8;
+    font-size: 17px;
+    border-radius: 15px;
+    margin-top: 50px;
+  }  
+  .btn2:hover {
+    opacity: 1;
+  }
+  .form-txt{
+    color:#6d004b;
+  }  
+  .row{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .dnt {
+    display: flex;
+    flex-direction: row;
+    width: 340px;
+    height: auto;
+    position: relative;
+    margin: auto;
+    margin-top: 26px;
+  }
+  /* Add some shadows to create a card effect */
+  .card {
+    background-color: rgb(255, 255, 255);
+    border: 4px solid #ffdbfd;
+    border-radius: 20px;
+  }
+  /* Some left and right padding inside the container */
+  .donut_f {
+    padding: 0 16px;
+    color: #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .slider{
+    width: 95%;
+    height: auto;
+    margin: auto;
+    border: 4px solid #ffc4e5;
+  }
+  /* Clear floats */
+  .donut_f::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }  
+  .button_donut_cont{
+    display: flex;
+    justify-content: center;
+  }
+  .button_donut {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: #ff9ef9;
+    font-weight: 700;
+    background-color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    height: 50px;
+    width: 320px;
+    border-radius: 25px;
+    border: 3px solid #ff9ed5;
+    transition: 0.5s;
+  }
+  .company_info_head{
+    width: 1350px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  .logo_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .text_header {
+    width: 400px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  .navigate {
+    width: 500px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .navigate_item{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+  }
+  .call-icon{
+    width: 40px;
+    height: 40px;
+  }
+  .logo{
+    width: 400px;
+  }
+  .phone_number{
+    font-size: 18px;
+    margin-top: 8px;
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+  }
+  .phone_container{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 220px;
+  }
+  .button_donut:hover {
+    transition: 0.5s;
+    background-color: #ff9ed5;
+    color: #ffffff;
+  }
+  .donut_pic{
+    object-fit: cover;
+    width: 285px;
+    /* min-width: 95px; */
+    height: 196px;
+    /* min-height: 205px; */
+    margin: 15px;
+    border-radius: 4px;
+  }
+  .donut_description_box{
+    height: 100px;
+  }
+  .donut_description{
+    font-size: 18px;
+    color: #272727;
+  }
+  .donut_name{
+    color: #000000;
+  }
+  .donut_price{
+    font-size: 20px;
+    font-weight: 600;
+    color: #484848;
+  }
+  .old_price{
+    font-size: 18px;
+    font-weight: 500;
+    color: #484848;
+  }
+  .donut_price_box{
+    display: flex;
+    justify-content: center;
+  }
+  .icon{
+    width: 35px;
+    height: 35px;
+    margin: 0 35px 35px 35px;
+  }
+  .icons{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+  }
+  .contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -15px;
+  }
+  .email-footer{
+    color: #676767;
+    font-size: 18px;
+    margin-right: 15px;
+    text-decoration: none;
+  }
+  .phone-footer{
+    color: #676767;
+    font-size: 18px;
+    margin-left: 15px;
+    text-decoration: none;
+  }
+  .end_text{
+    color: #676767;
+    font-size: 13px;
+  }
+  .page_info{
+    margin: -5px 0 15% 15%;
+    width: 70%;
+    text-align: center;
+  }
+  .logo_footer{
+    width: 120px;
+  }
+  .con{
+    width: 100%;
+    height: 550px;
+    object-fit:cover;
+  }
+  .con_txt{
+    position: relative;
+    text-align: center;
+    color: rgb(255, 170, 232);
+  }
+  .centered_txt {
+    display: flex;
+    flex-direction: row;
+  }
+  .txt_banner{
+    font-size: 55px;
+    font-weight:700;
+    font-family: "Lucida Bright", Georgia, serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #490040;
+  }
+  .accordion {
+    background-color: #ffffff;
+    margin: 0 auto;
+    color: #760062;
+    cursor: pointer;
+    padding: 14px;
+    font-size: 26px;
+    width: 100%;
+    border: none;
+    display: flex;
+    text-align: center;
+    position: relative;
+    transition-duration: 0.3s;
+  }
+  
+  .accordion::before,
+  .accordion::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 6px;
+    background-color: #ffa0f2;
+  }
+  
+  .accordion::before {
+    left: 0px;
+  }
+  
+  .accordion::after {
+    right: 0px;
+  }
+  .accordion:hover {
+    color:#cd00c6;
+    transition-duration: 0.3s;
+  }
+  /* Style the accordion panel. Note: hidden by default */
+  .panelac {
+    padding: 0 18px;
+    width: 100%;
+    display: none;
+    overflow: hidden;
+  }
+  .donut_types{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 40px 0 10px 0;
+    color:#4d4d4d;
+    font-size:35px
+  }
+  .accordion_box{
+    width: 100%;
+  }
+  hr {
+    margin: 0 auto;
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(55, 55, 55), rgb(255, 255, 255));
+  }
+  .pink_hr{
+    width: 100%;
+    height: 4px;
+    margin-top: 5px;
+    background-image: none;
+    background-color: #ff3aa9;
+  }
+  .container{
+    width: 80%;
+    position: relative;
+    margin: auto;
+  }
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    position: relative;
+    margin: auto;
+    color: #ddd;
+  }
+  th, td {
+    background-color: #fff9fe;
+    color:#6d004b;
+    padding: 8px;
+    text-align: center;
+    height: 35px;
+    border-bottom: 1px solid #ff9eef;
+  }
+  .curriculum{
+    height: 60px;
+    font-size: 22px;
+    background-color: #ffe7fb;
+  }
+  .contact_table{
+    border: 3px solid #ffe7fb;
+    margin-top: 15px;
+  }
+  .benefits{
+    text-align: left;
+    background-color: #ffe7fb;
+    width: 30%;
+    height: 60px;
+    border-right: 1px solid #ff9eef;
+  }
+  .last-row{
+    border-bottom: none;
+  }
+  .most-popular{
+    padding:0; 
+    background-color: #222222;
+    font-size: 22px;
+  }
+  .pr-box{
+    width: 80%;
+    position: relative;
+    margin:auto;
+  }
+  .pr-podpis{
+    color: rgb(161, 161, 161);
+    font-size: 11px;
+  }
+  .price-row{
+    display: none;
+  }
+  .buy-field{
+    min-height: 430px;
+    width: 750px;
+    margin-top: 56px;
+    position: relative;
+    margin:auto;
+    margin-top: 35px;
+  }
+  .buy-form{
+    color:#6d004b;
+    position: relative;
+    margin: auto;
+    width: 700px;
+    padding: 16px;
+    background-color: #fcdef7;
+    border: 1px solid #ff9eef;
+    border-radius: 15px;
+  }
+  textarea{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #fff4fa;
+    border: 1px solid #d09cb9;
+    border-radius: 5px;
+  }   
+  textarea:focus{
+    background-color: #f5ddfb;
+    outline: none;
+  }
+  .carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+  .active{
+    color: #860392;
+  }
+  footer{
+    padding: 0 0 10px 0;
+    height: 250px;
+    padding-top:26px;
+  }
+  .on_phones{
+    display: none;
+  }
+  .unhide{
+    display: none;
+  }
+  @media screen and (max-width: 1488px) {
+    .full_screen{
+      display: none;
+    }
+    .unhide{
+      display: block;
+    }
+    .on_phones{
+      display: block;
+      margin-top: -50px;
+    }
+    .navigate_item{
+      text-decoration: none;
+      color: #202020;
+      font-size: 20px;
+    }
+    main{
+      margin-top:50px;
+    }
+    .hide{
+      display: none;
+    }
+    header{
+      z-index: 1;
+      position: fixed;
+      background-color: #ffffff;
+      width: 100%;
+      padding-top: 0;
+      margin-top: 0;
+    }
+    .pink_hr{
+      margin-top: 0;
+    }
+    .con{
+      height: 400px;
+    }
+    .logo{
+      width: 300px;
+    }
+    .txt_banner{
+      font-size: 40px;
+    }
+    .price-row{
+      display: flex;
+      width: 80%;
+      position: relative;
+      margin: auto;
+    }
+    .cent-text{
+      text-align: center;
+      color:#490040;
+    }
+    .delivery{
+      height: 80px;
+      padding-top:24px;
+    }
+    .prc-card{
+      display: flex;
+      flex-direction: row;
+      width: 400px;
+      height: auto;
+      position: relative;
+      margin: auto;
+      margin-top: 26px;
+      justify-content: center;
+    }
+    .prc {
+      width: 320px;
+      height: auto;
+      position: relative;
+      margin: auto;
+      margin-top: 26px;
+      background-color: rgb(255, 245, 254);
+      border: 2px solid #ffc4e5;
+      justify-content: center;
+      padding: 0 5px 20px 5px;
+    }
+    .hr-card{
+      margin-top: 0;
+      margin-bottom: 8px;
+      width: 100%;
+      border: 0;
+      height: 2px;
+      background-image: linear-gradient(to right, #ffb8f7 0%, #980086 50%, #ffb8f7 100%);
+    }
+    .package{
+      height: 80px;
+    }
+     .st_podpis{
+      margin-left: 10%;
+    }
+     .icon{
+      width: 35px;
+      height: 35px;
+      margin: 0 20px;
+    }
+     .icons{
+      position: relative;
+      margin:auto;
+    }
+    table{
+      display: none;
+    }
+    .buy-form{
+      max-width: 500px;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .logo{
+      width: 200px;
+    }
+    .call-field{
+      height: 485px;
+    }
+    .prc-card{
+      width: 320px;
+      height: auto;
+      position: relative;
+      margin:auto;
+      justify-content: center;
+      padding: 0;
+    }
+    .donut_f{
+      height: auto;
+    }
+    .prc {
+      width: 320px;
+      height: auto;
+      margin-top: 26px;
+      background-color: rgb(255, 245, 254);
+      border: 2px solid #ffc4e5;
+      justify-content: center;
+      padding: 0 5px 20px 5px;
+    }
+    .contacts{
+      flex-direction: column;
+    }
+    .donut_price{
+      margin-top: 60px;
+    }
+    .email-footer{
+      margin: 10px 0 5px 0;
+    }
+    .txt_banner{
+      font-size: 22px;
+      -webkit-text-stroke-width: 0.7px;
+    }
+    .phone-footer{
+      margin: 5px 0 10px 0;
+    }
+    footer{
+      height: auto;
+      min-width: 320px;
+    }
+    .container{
+      width:100%;
+    }
+    .dnt{
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .donut_pic{
+      object-fit: cover;
+      width: auto;
+      height: 140px;
+      border-radius: 4px;
+      margin-top: 15px;
+    }
+    .donut_description_box{
+      height: 100px;
+    }
+    .con{
+      height: 350px;
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #250017;
+    border-radius: 5px;
+  }
